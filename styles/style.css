@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --cinza-texto: #667085;
+    --vinho: #8E2424;
+    --preto: #101828;
+}
+
+
+body {
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+/*-- começo do css HEADER -- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 2rem;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.lista {
+    display: grid;
+    grid-auto-flow: column;
+    list-style-type: none;
+    column-gap: 1.25rem;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.lista li a {
+    text-decoration: none;
+    color: var(--preto);
+}
+
+.botao__navbar {
+    border-radius: 8px; 
+    padding: 0.6rem 1.1rem;
+    border: none;
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: var(--cinza-texto);
+    cursor: pointer;
+}
+
+.botao__navbar__vinho {
+    background-color: #8E2424;
+    color: white;
+}
+
+.botao__navbar:hover, .botao__enviar:hover {
+    border: 1px solid var(--vinho);
+    background-color: transparent;
+    color: black;
+    transition: 0.3s;
+}
+
+
+
+/* -- começo do css section SOBRE NÓS -- */
+.container__sobrenos {
+    padding: 6rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+
+.subtitulo {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #8E2424;
+}
+
+.titulo {
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--preto);
+    letter-spacing: -0.05rem;
+    padding-bottom: 1rem;
+}
+
+.container__texto__sobrenos {
+    width: 70%;
+    text-align: center;
+}
+
+.texto__sobrenos {
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: var(--cinza-texto);
+}
+
+.container__metricas {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 2rem 6rem 2rem;
+    box-sizing: border-box;
+}
+
+.flex__grow {
+    display: flex;
+    justify-content:space-around;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex-grow: 1;
+    flex-basis: 20%;
+}
+
+.titulo__info {
+    font-weight: 600;
+    font-size: 4rem;
+    color: var(--vinho);
+    letter-spacing: -2%;
+    line-height: 5rem;
+}
+
+/*-- começo do css VAGAS -- */
+.vagas {
+    margin-bottom: 4rem;
+}
+
+.vagas__header {
+    width: 80%;
+    padding: 0 2rem;
+    margin: 6rem auto 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.vagas__subtitulo {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--vinho);
+    line-height: 1.25rem;
+    padding: 0.25rem 0.75rem;
+    background-color: rgba(142, 36, 36, 0.05);
+    border-radius: 16px;
+}
+
+.vagas__imagem {
+    padding-top: 2.75rem;
+    width: 100%;
+    height: auto;
+}
+
+.vagas__cards {
+    width: 55%;
+    padding: 0 2rem;
+    margin: 4rem auto 0 auto;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+.vagas__titulo {
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    color: var(--preto);
+    padding-bottom: 0.5rem;
+}
+
+.vagas__links {
+    border: 1px solid #EAECF0;
+    border-radius: 16px;
+    padding: 1.5rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+/* -- começo do css DEPOIMENOS -- */
+.depoimentos {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0rem 2rem;
+    box-sizing: border-box;
+    margin-bottom: 6rem /*-- remover isso --*/;
+}
+
+.container__depoimentos {
+    background-color: rgba(142, 36, 36, 0.05);
+    padding: 3rem;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.depoimentos__subtitulo { 
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--vinho);
+    line-height: 1.25rem;
+}
+
+.depoimentos__conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.depoimentos__titulo {
+    font-size: 2.25rem;
+    font-weight: 500;
+    letter-spacing: -0.10rem;
+    color: var(--preto);
+    line-height: 2.75rem;
+    padding-top: 1rem;
+}
+
+.imagem__depoimentos {
+    max-width: 60px;
+    max-height: 60px;
+    margin-bottom: 1rem;
+}
+
+.autor__nome__depoimento {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--preto);
+}
+
+.autor__profissao__depoimento {
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--cinza-texto);
+    margin-top: 0.25rem;
+}
+
+/* -- começo do css RODAPE -- */
+.rodape {
+    width: 100%;
+    background-color: #F9FAFB;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.rodape__conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.rodape__formulario {
+    padding-top: 1.25rem;
+}
+
+.formulario {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.botao__email {
+    font-size: 1rem;
+    font-weight: 400;
+    min-width: 300px;
+    color: var(--cinza-texto);
+    line-height: 1.2rem;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--cinza-texto);
+    box-sizing: border-box;
+}
+
+.botao__enviar {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-weight: 500;
+    color: white;
+    background-color: var(--vinho);
+    padding: 0.6rem 1.25rem;
+    border-radius: 8px;
+    border: none;
+    border: 1px solid var(--vinho);
+}
+
+.direitos__autorais {
+    padding-top: 2rem;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: #98A2B3;
+}
+
+/*-- Classes gerais --*/
+.display__flex__075rem {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.display__flex__2rem {
+    display: flex;
+    gap: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.display__flex__2rem a {
+    text-decoration: none;
+    color: var(--preto);
+}
+
+.texto__preto__medio {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--preto);
+}
+
+.texto__cinza__medio {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--cinza-texto);
+}
+
+.texto__cinza__normal {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--cinza-texto);
+    line-height: 1.5rem;
+}
+
+.texto__grande__cinza__normal {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--cinza-texto);
+    line-height: 1.9rem;
+}
+
+.titulo__medio {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: var(--preto);
+    line-height: 2.75rem;
+    text-align: center;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 629px) {
+    .navbar, .container__metricas, .vagas__header, .depoimentos, .container__texto__sobrenos, .vagas__cards {
+        width: 100%;
+    }
+
+    #botao__cadastrar, #nome__logo, .div__vazia{
+        display: none;
+    }
+
+    .navbar {
+        gap: 5%;
+        padding: 1rem;
+    }
+
+    .flex__grow {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .card__info {
+        min-width: 40%;
+    }
+
+    .mobile__header {
+        width: 100%;
+        padding: 2rem 2rem;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+
+    .vagas__cards {
+        width: 70%;
+    }
+
+    .lista {
+        display: flex;  
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .lista li {
+        padding: 0.5rem 0;
+    }
+
+    .rodape {
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    .container__metricas {
+        padding-bottom: 2rem;
+    }
+
+    .botao__navbar {
+        background-color: var(--vinho);
+        color: white;
+    }
+
+    .titulo__info {
+        font-size: 3rem;
+    }
+
+    .titulo {
+        font-size: 2rem;
+    }
+    
+    .depoimentos {
+        padding: 0 1rem;
+    }
+
+    .container__depoimentos {
+        padding: 1rem;
+    }
+
+    .botao__email {
+        min-width: 0;
+    }
+
+    .formulario {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .vagas__header {
+        margin: 3rem auto 0 auto;
+    }
+}
+
+
+@media only screen and (min-width: 630px) and (max-width: 800px) {
+    .navbar, .container__metricas, .vagas__header, .depoimentos {
+        width: 100%;
+    }
+
+    #nome__logo, .div__vazia{
+        display: none;
+    }
+
+    .flex__grow {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .card__info {
+        min-width: 40%;
+    }
+
+    .mobile__header {
+        width: 100%;
+        padding: 2rem 2rem;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+
+    .vagas__cards {
+        width: 70%;
+    }
+}
+
+
+
+@media only screen and (max-width: 970px) {
+    .navbar, .container__metricas, .vagas__header, .depoimentos {
+        width: 100%;
+    }
+
+    .vagas__cards {
+        width: 70%;
+    }
+}
