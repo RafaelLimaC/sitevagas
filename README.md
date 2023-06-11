@@ -1,3 +1,4 @@
-# sitevagas
+# Site fictício com vagas de trabalho
 
-> html css
+* HTML
+* CSS
